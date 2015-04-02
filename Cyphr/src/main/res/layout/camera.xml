@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/camera_relativelayout">
+
+    <VideoView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:id="@id/surfaceCamera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/miclevel_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_above="@id/btnCaptureVideo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mic Level"
+        android:id="@id/miclevel_text"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="?android:selectableItemBackground"
+        android:id="@id/btnCaptureVideo"
+        android:src="@drawable/ic_mic"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/camera_return_button"
+        android:src="@drawable/abc_ic_ab_back_holo_light"
+        style="@style/Widget.AppCompat.Light.Base.ActionButton.Overflow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:baselineAlignBottom="true" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="00:00"
+        android:background="@drawable/abc_item_background_holo_dark"
+        android:id="@id/video_duration"
+        android:layout_above="@id/miclevel_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:textSize="20dp"
+        android:textIsSelectable="false" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@id/camera_icon"
+        android:src="@android:drawable/presence_video_busy"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/surfaceCamera"
+        android:layout_toLeftOf="@id/video_duration" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/replayview"
+        android:src="@drawable/ic_sdcard"
+        android:longClickable="true"
+        android:layout_above="@id/miclevel_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:max="4000"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_alignTop="@id/video_duration"
+        android:layout_toRightOf="@+id/replayview"
+        android:layout_toLeftOf="@id/camera_icon" />
+
+</RelativeLayout>

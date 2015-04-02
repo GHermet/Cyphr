@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/macbook/Documents/workspace/Cyphr/Cyphr/build/intermediates/pre-dexed/debug/classes-a70082cf924bb95e75c9579cf086320b7af444c3.jar"
+        jar="/Users/macbook/Documents/workspace/Cyphr/Cyphr/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="/Users/macbook/Documents/workspace/Cyphr/Cyphr/build/intermediates/pre-dexed/debug/android-support-v4-cd1d865fc47b6f5726f1d406018cdf1594069ea8.jar"
+        jar="/Users/macbook/Documents/workspace/Cyphr/Cyphr/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4"/>
+    <item
+        dex="/Users/macbook/Documents/workspace/Cyphr/Cyphr/build/intermediates/pre-dexed/debug/support-v13-18.0.0-eb76c766ec9c5780e6dccc0cc536d4699ff23cde.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v13/18.0.0/support-v13-18.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6a2fa0c0b54359ee359fd40244e1ce2dc6cab408"/>
+
+</pre-dex-items>
